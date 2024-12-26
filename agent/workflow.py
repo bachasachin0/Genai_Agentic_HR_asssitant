@@ -12,8 +12,8 @@ from langchain.agents import tool
 
 import operator
 
-from llm_utils import get_llm
-from mongodb_utils import vector_store
+from agent.llm_utils import get_llm
+from agent.mongodb_utils import vector_store
 from config import MONGO_DB
 
 @tool
