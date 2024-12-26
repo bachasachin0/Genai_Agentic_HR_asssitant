@@ -79,7 +79,7 @@ bachasachin0-Genai_Agentic_HR_asssitant/
 ---
 
 ## Agent Workflow Diagram
-![Agent Workflow](img\agent_workflow.jpg)
+![Agent Workflow](img/agent_workflow.jpg)
 
 Add an image here to illustrate the agent workflow. You can include a diagram showing the interaction between components such as MongoDB(Tool) , LLMs (chatbot), and the user interface.
 
@@ -89,9 +89,9 @@ Add an image here to illustrate the agent workflow. You can include a diagram sh
 
 Include screenshots here to showcase the interface and features of the application, such as:
 - Employee data management
-![Adding employees](img\form.jpg)
+![Adding employees](img/form.jpg)
 - Team formation suggestions
-![Team formation](img\assistant.jpg)
+![Team formation](img/assistant.jpg)
 
 ---
 
