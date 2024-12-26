@@ -2,7 +2,6 @@ import random
 import google.generativeai as genai
 from typing import Dict
 from dotenv import load_dotenv
-# from config import GOOGLE_API_KEY
 import os
 
 load_dotenv()

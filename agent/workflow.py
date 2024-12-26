@@ -72,17 +72,7 @@ chatbot_node = functools.partial(agent_node, agent=chatbot_agent, name="HR Chatb
 
 tool_node = ToolNode([lookup_employees], name="tools")
 
-# workflow = StateGraph(AgentState)
-# workflow.add_node("chatbot", chatbot_node)
-# workflow.add_node("tools", tool_node)
 
-# workflow.set_entry_point("chatbot")
-# workflow.add_conditional_edges(
-#     "chatbot",
-#     tools_condition,
-#     {"tools": "tools", "END": "END"}
-# )
-# workflow.add_edge("tools", "chatbot")
 class WorkflowManager:
     def __init__(self, chatbot_node, tool_node):
         self.chatbot_node = chatbot_node
