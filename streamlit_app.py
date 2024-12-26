@@ -83,8 +83,7 @@ def main():
             # Confirm clear history
             deleted_count = clear_history_collection()
             st.success(f"History cleared! Deleted {deleted_count} documents.")
-            # Optionally, rerun the page to refresh the state
-            # st.experimental_rerun()  # Refresh the app to remove the selectbox options
+            
 
         elif confirmation == "No, Return":
             st.info("History clearing was canceled.")
@@ -106,7 +105,7 @@ def main():
             generated_messages = generate_messages(user_input)
 
             # Display final state of messages
-            st.subheader("Final state of temp_mem:")
+            st.subheader("Final state:")
 
             # Loop through each message and display with a 3-second delay
             for idx, msg in enumerate(generated_messages):
@@ -121,7 +120,7 @@ def main():
                     color = "#98FB98"  # Light green color for ToolMessage
 
                 # Add delay to make the messages appear one by one with animation
-                time.sleep(2)  # 3-second delay
+                time.sleep(2)  # 2-second delay
 
                 # Use expandable and collapsible sections for the message content
                 with st.expander(f"{message_type}", expanded=False):

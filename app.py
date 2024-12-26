@@ -5,12 +5,11 @@ import streamlit_app
 
 # Set Page Configuration
 st.set_page_config(
-    page_title="Neon Glow Professional App",
+    page_title="Hr assistant",
     page_icon="✨",
     layout="wide",
     initial_sidebar_state="expanded",
 )
-
 
 
 # Load Custom CSS
@@ -48,7 +47,7 @@ def main():
                         animation: glowing 1.5s infinite alternate;
                         font-family: 'Roboto', sans-serif;">
                 <h1 style="font-size: 36px; color: white;">AI Team Design Workflow</h1>
-                <p style="font-size: 18px; color: white;">Designing a team for iOS app development.</p>
+                <p style="font-size: 18px; color: white;">Get team formation suggestion.</p>
             </div>
             <style>
                 @keyframes glowing {
@@ -69,29 +68,33 @@ def main():
 
 def render_home_page():
     """Render the Home page."""
-    st.markdown("<h1 class='title'>Welcome to the Neon Glow App</h1>", unsafe_allow_html=True)
-    st.markdown("<p class='subtitle'>Experience professional design with a touch of neon brilliance.</p>", unsafe_allow_html=True)
+    # About the Application
+    st.markdown("""
+        ### About the Application
+        The **GenAI Agentic HR Assistant** is an advanced AI-powered tool designed to revolutionize HR management. This application provides:
+        - **Employee Record Management**: Efficiently manage employee data using MongoDB.
+        - **Intelligent Query Resolution**: Retrieve employee records or form project-specific teams using natural language queries.
+        - **Team Formation**: Automatically suggest teams tailored to project requirements.
+        - **Dynamic Workflows**: Leverage agentic workflows powered by LLMs to streamline HR operations.
+        - **Interactive User Interface**: Seamless interaction through a modern Streamlit-based design.
+
+        This application is ideal for HR professionals looking to enhance productivity and make data-driven decisions.
+    """, unsafe_allow_html=True)
 
     # Features Section
     st.markdown("### Features")
     col1, col2, col3 = st.columns(3)
 
     with col1:
-        st.markdown("<div class='feature-card'><h2>Modern Design</h2><p>Explore cutting-edge designs.</p></div>", unsafe_allow_html=True)
+        st.markdown("<div class='feature-card'><h2>AI way of team formation</h2><p>Explore employees in natural language.</p></div>", unsafe_allow_html=True)
 
     with col2:
-        st.markdown("<div class='feature-card'><h2>Professional Fonts</h2><p>Experience unmatched readability.</p></div>", unsafe_allow_html=True)
+        st.markdown("<div class='feature-card'><h2>Team formation</h2><p>Experience unmatched readability.</p></div>", unsafe_allow_html=True)
 
     with col3:
-        st.markdown("<div class='feature-card'><h2>Interactive Animations</h2><p>Engage users with smooth effects.</p></div>", unsafe_allow_html=True)
+        st.markdown("<div class='feature-card'><h2>Agentic workflow</h2><p>Engage employees what they deserve in.</p></div>", unsafe_allow_html=True)
 
-    # Call to Action Section
-    st.markdown("""
-        <div class='cta-section'>
-            <button class='neon-button' onclick='alert("Welcome to the future!")'>Get Started</button>
-        </div>
-    """, unsafe_allow_html=True)
-
+    
 # Run the application
 if __name__ == "__main__":
     main()

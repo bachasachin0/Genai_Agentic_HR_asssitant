@@ -89,9 +89,9 @@ Add an image here to illustrate the agent workflow. You can include a diagram sh
 
 Include screenshots here to showcase the interface and features of the application, such as:
 - Employee data management
-![Adding employees](img/form.jpg)
+![Adding employees](img/form.png)
 - Team formation suggestions
-![Team formation](img/assistant.jpg)
+![Team formation](img/assistant.png)
 
 ---
 
