@@ -1,0 +1,130 @@
+/* General Reset */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(26, 26, 26, 0.8); /* Semi-translucent */
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px; /* Rounded corners */
+}
+
+.nav-container {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-item {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    position: relative;
+    padding: 5px 10px;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.nav-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(45deg, #ff007a, #00d4ff);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.nav-item:hover {
+    color: #00d4ff;
+    text-shadow: 0 0 8px #00d4ff;
+}
+
+.nav-item:hover::before {
+    opacity: 1;
+}
+
+/* Title and Subtitle */
+.title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #cccccc;
+    margin-top: 10px;
+}
+
+/* Features Section */
+.feature-card {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    margin: 10px;
+}
+
+.feature-card h2 {
+    color: #00d4ff;
+}
+
+/* Call to Action */
+.cta-section {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.neon-button {
+    color: #ffffff;
+    background-color: transparent;
+    border: 2px solid #00d4ff;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s, box-shadow 0.3s;
+}
+
+.neon-button::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: linear-gradient(45deg, #ff007a, #00d4ff);
+    filter: blur(10px);
+    z-index: -1;
+    border-radius: 50px;
+}
+
+.neon-button:hover {
+    color: #ff007a;
+    box-shadow: 0 0 15px #ff007a, 0 0 30px #00d4ff;
+}
+
+/* Animations */
+@keyframes neonGlow {
+    0% {
+        background-color: #121212;
+    }
+    50% {
+        background-color: #1a1a1a;
+    }
+    100% {
+        background-color: #121212;
+    }
+}
